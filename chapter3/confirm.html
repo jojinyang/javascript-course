@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문은 아니지만 알아야할 명령어</title>
+</head>
+<body>
+    <h1>confirm</h1>
+    <p>confirm은 조건문은 아니지만, 그 결과를 true, false로 반환하는 메소드(=명령어)</p>
+    <p>비슷한 메소드는 이미 살펴본 prompt()가 있다.</p>
+    <code>
+        <pre>
+            confirm("message");
+        </pre>
+    </code>
+    <h2>confirm 예시</h2>
+    <script>
+        // p.66 회원 탈퇴 여부를 물을 때
+        var memberExit = confirm("탈퇴하시겠습니까?")
+        console.log(memberExit);
+        if(memberExit){ // true or false만 가짐
+            //확인 누르면 true, 탈퇴의사!
+            alert("그동안 이용해주셔서 감사합니다. \n일주일 이내 탈퇴를 철회할 수 있습니다")
+        } else{
+            //취소 누르면 false, 탈퇴철회!
+            alert("불편을 드려 죄송합니다. \n보다 나은 서비스로 보답하겠습니다")
+        }
+    </script>
+
+</body>
+</html>
