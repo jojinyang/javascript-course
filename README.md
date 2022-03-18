@@ -10,3 +10,4 @@
 
 # mission
 - p.58 Mission I, II : finished
+- p.84 Mission I, II : finished
